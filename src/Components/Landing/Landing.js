@@ -162,7 +162,7 @@ export default function Landing() {
                         </Grid>
                         <Grid item xs={6}>
                             <div className={classes.picMike}>
-                                <img src="../Pictures/mike1.jpg"></img>
+                                <img src="../Pictures/mike1.JPG"></img>
                             </div>
                         </Grid>
                         <Grid item xs={12} className={classes.contactInfo}>
