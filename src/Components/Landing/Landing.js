@@ -81,7 +81,8 @@ export default function Landing() {
     useEffect(() => {
         Aos.init({
             duration: 1500,
-            easing: 'ease-in'
+            easing: 'ease-in',
+            once: "true"
         });
     }, []);
 
