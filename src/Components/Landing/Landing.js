@@ -95,15 +95,15 @@ export default function Landing() {
             </div>
 
             <Grid container spacing={0} className={classes.container}>
-                <Grid data-aos="fade-down" item xs={12} xl={12} className={classes.left}>
+                <Grid data-aos="fade-down" data-aos-once="true" item xs={12} xl={12} className={classes.left}>
                     <ListOfProjects />
                 </Grid>
 
-                <Grid data-aos="fade-in" item xs={12} xl={12} className={classes.middle}>
+                <Grid data-aos="fade-in" data-aos-once="true" item xs={12} xl={12} className={classes.middle}>
                     <Languages />
                 </Grid>
 
-                <Grid data-aos="fade-out" item xs={12} className={classes.right}>
+                <Grid data-aos="fade-out" data-aos-once="true" item xs={12} className={classes.right}>
                     <Grid container spacing={1} justify="center">
                         <Grid item xs={12} xl={6}>
                             <div>
