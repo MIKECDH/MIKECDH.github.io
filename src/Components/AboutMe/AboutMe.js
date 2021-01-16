@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         },
         "& h4": {
             paddingTop: "50px",
-            ['@media(min-width: 350px)']: {
+            ['@media(max-width: 600px)']: {
                 letterSpacing: "0",
                 fontSize: "14pt"
             }
@@ -16,13 +16,13 @@ const useStyles = makeStyles((theme) => ({
         "& p": {
             fontSize: "1.2rem",
             paddingTop: "15px",
-            ['@media(min-width: 350px)']: {
+            ['@media(max-width: 600px)']: {
                 letterSpacing: "0",
                 fontSize: "0.8rem"
             }
         },
         textAlign: "left",
-        ['@media(min-width: 350px)']: {
+        ['@media(max-width: 600px)']: {
             marginTop: "0",
             textAlign: "center",
             padding: "5px"

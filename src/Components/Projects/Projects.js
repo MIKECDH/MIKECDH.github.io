@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#FFF",
         color: 'black',
         paddingTop: "20vh",
-        ['@media(min-width: 350px)']: {
+        ['@media(max-width: 600px)']: {
             padding: "0",
             margin: "0"
         }
@@ -22,13 +22,13 @@ const useStyles = makeStyles((theme) => ({
         height: "450px",
         backgroundRepeat: "no-repeat",
         backgroundSize: "contain",
-        ['@media(min-width: 350px)']: {
+        ['@media(max-width: 600px)']: {
             height: "300px"
         }
     },
     info: {
         ['@media(min-width: 350px)']: {
-            
+
         }
     }
 }));

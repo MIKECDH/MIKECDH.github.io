@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
             fontSize: "3.5rem",
             textAlign: "center",
             letterSpacing: "0.3em",
-            ['@media(min-width: 350px)']: {
+            ['@media(max-width: 600px)']: {
                 fontSzie: "2.5rem",
                 padding: "10px",
                 textAlign: "center"
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
         "& a": {
             color: "#0388fc"
         },
-        ['@media(min-width: 350px)']: {
+        ['@media(max-width: 600px)']: {
             marginTop: "50px",
         },
     }

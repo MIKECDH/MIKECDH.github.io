@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "Roboto",
         margin: "0 auto",
         padding: "150px",
-        ['@media(min-width: 360px)'] : {
+        ['@media(max-width: 600px)'] : {
             padding: 0
         }
     },
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: "20px",
         margin: "0 auto",
         color: "Black",
-        ['@media(min-width: 360px)']: {
+        ['@media(max-width: 600px)']: {
             "& h1": {
                 fontSize: "1.5rem"
             },
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: "10vh",
         height: "100vh",
         margin: 0,
-        ['@media(min-width: 350px)']: {
+        ['@media(max-width: 600px)']: {
             marginTop: "5vh",
         },
     },
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: "10vh",
         height: "100vh",
         margin: 0,
-        ['@media(min-width: 350px)']: {
+        ['@media(max-width: 600px)']: {
             marginTop: "5vh",
         },
     },
@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: "10vh",
         height: "50vh",
         margin: 0,
-        ['@media(min-width: 350px)']: {
+        ['@media(max-width: 600px)']: {
             marginTop: "10vh",
         },
     }

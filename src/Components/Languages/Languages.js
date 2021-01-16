@@ -10,12 +10,12 @@ const useStyles = makeStyles((theme) => ({
         "& i": {
             fontSize: "5rem",
             color: "#0388fc",
-            ['@media(min-width: 350px)']: {
+            ['@media(max-width: 600px)']: {
 
                 fontSize: "2rem"
             }
         },
-        ['@media(min-width: 350px)']: {
+        ['@media(max-width: 600px)']: {
             textAlign: "center",
             marginTop: "50px"
         }
