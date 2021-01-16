@@ -10,7 +10,14 @@ const useStyles = makeStyles((theme) => ({
         "& i": {
             fontSize: "5rem",
             color: "#0388fc",
+            ['@media(min-width: 350px)']: {
 
+                fontSize: "2rem"
+            }
+        },
+        ['@media(min-width: 350px)']: {
+            textAlign: "center",
+            marginTop: "50px"
         }
     }, 
     icons: {
@@ -18,8 +25,7 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: "row",
         justifyContent: 'space-evenly',
         alignItems: "center",
-        paddingTop: "10vh"
-        
+        paddingTop: "10vh",
     }
 }));
 

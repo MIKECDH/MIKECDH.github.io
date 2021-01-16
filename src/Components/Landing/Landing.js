@@ -17,7 +17,10 @@ const useStyles = makeStyles((theme) => ({
         color: '#000',
         fontFamily: "Roboto",
         margin: "0 auto",
-        padding: "150px"
+        padding: "150px",
+        ['@media(min-width: 360px)'] : {
+            padding: 0
+        }
     },
     top: {
         paddingTop: "0",
@@ -32,7 +35,15 @@ const useStyles = makeStyles((theme) => ({
         paddingTop: "250px",
         paddingLeft: "20px",
         margin: "0 auto",
-        color: "Black"
+        color: "Black",
+        ['@media(min-width: 360px)']: {
+            "& h1": {
+                fontSize: "1.5rem"
+            },
+            "& p": {
+                fontSize: "1.rem"
+            }
+        }
     },
     container: {
         height: "auto"
@@ -40,17 +51,26 @@ const useStyles = makeStyles((theme) => ({
     left: {
         marginTop: "10vh",
         height: "100vh",
-        margin: 0
+        margin: 0,
+        ['@media(min-width: 350px)']: {
+            marginTop: "5vh",
+        },
     },
     right: {
         marginTop: "10vh",
         height: "100vh",
-        margin: 0
+        margin: 0,
+        ['@media(min-width: 350px)']: {
+            marginTop: "5vh",
+        },
     },
     middle: {
         marginTop: "10vh",
         height: "50vh",
-        margin: 0
+        margin: 0,
+        ['@media(min-width: 350px)']: {
+            marginTop: "10vh",
+        },
     }
 }));
 
@@ -72,24 +92,24 @@ export default function Landing() {
                     <p>Junior Software Developer</p>
                 </div>
             </div>
-            
+
             <Grid container spacing={0} className={classes.container}>
-                <Grid data-aos="fade-down" item xs={12} className={classes.left}>
+                <Grid data-aos="fade-down" item xs={12} xl={12} className={classes.left}>
                     <ListOfProjects />
                 </Grid>
 
-                <Grid data-aos="fade-in" item xs={12} className={classes.middle}>
+                <Grid data-aos="fade-in" item xs={12} xl={12} className={classes.middle}>
                     <Languages />
                 </Grid>
 
                 <Grid data-aos="fade-out" item xs={12} className={classes.right}>
                     <Grid container spacing={1} justify="center">
-                        <Grid item xs={6}>
+                        <Grid item xs={12} xl={6}>
                             <div>
                                 <AboutMe />
                             </div>
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item xs={12} xl={6}>
                             <div>
                                 <img src="../Pictures/mike1.JPG" alt="Donhyuk Choi"></img>
                             </div>

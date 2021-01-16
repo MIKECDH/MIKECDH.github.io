@@ -11,11 +11,19 @@ const useStyles = makeStyles((theme) => ({
             marginTop: "30px",
             fontSize: "3.5rem",
             textAlign: "center",
-            letterSpacing: "0.3em"
+            letterSpacing: "0.3em",
+            ['@media(min-width: 350px)']: {
+                fontSzie: "2.5rem",
+                padding: "10px",
+                textAlign: "center"
+            },
         },
         "& a": {
             color: "#0388fc"
-        }
+        },
+        ['@media(min-width: 350px)']: {
+            marginTop: "50px",
+        },
     }
 }));
 

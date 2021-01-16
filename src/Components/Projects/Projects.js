@@ -12,12 +12,24 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         backgroundColor: "#FFF",
         color: 'black',
-        paddingTop: "20vh"
+        paddingTop: "20vh",
+        ['@media(min-width: 350px)']: {
+            padding: "0",
+            margin: "0"
+        }
     },
     media: {
         height: "450px",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "contain"
+        backgroundSize: "contain",
+        ['@media(min-width: 350px)']: {
+            height: "300px"
+        }
+    },
+    info: {
+        ['@media(min-width: 350px)']: {
+            
+        }
     }
 }));
 
@@ -32,13 +44,13 @@ export default function Projects({ projects }) {
                     title={projects.title}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography gutterBottom variant="h5" component="h2" className={classes.info}>
                         {projects.title}
                     </Typography>
-                    <Typography variant="body1" color="textSecondary" component="p">
+                    <Typography variant="body1" color="textSecondary" component="p" className={classes.info}>
                         {projects.description}
                     </Typography>
-                    <Typography variant="body1" color="textSecondary" component="p">
+                    <Typography variant="body1" color="textSecondary" component="p" className={classes.info}>
                         {projects.description2}
                     </Typography>
                 </CardContent>

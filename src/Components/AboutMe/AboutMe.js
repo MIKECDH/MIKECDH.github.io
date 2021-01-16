@@ -7,13 +7,26 @@ const useStyles = makeStyles((theme) => ({
             letterSpacing: "0.2rem",
         },
         "& h4": {
-            paddingTop: "50px"
+            paddingTop: "50px",
+            ['@media(min-width: 350px)']: {
+                letterSpacing: "0",
+                fontSize: "14pt"
+            }
         },
         "& p": {
             fontSize: "1.2rem",
-            paddingTop: "15px"
+            paddingTop: "15px",
+            ['@media(min-width: 350px)']: {
+                letterSpacing: "0",
+                fontSize: "0.8rem"
+            }
         },
         textAlign: "left",
+        ['@media(min-width: 350px)']: {
+            marginTop: "0",
+            textAlign: "center",
+            padding: "5px"
+        }
     }
 }));
 
