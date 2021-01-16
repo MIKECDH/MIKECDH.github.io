@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "Roboto",
         margin: "0 auto",
         padding: "150px",
+        overflowX: "hidden",
         ['@media(max-width: 600px)'] : {
             padding: 0
         }
