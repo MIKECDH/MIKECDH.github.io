@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         },
         "& h4": {
             paddingTop: "50px",
-            ['@media(max-width: 600px)']: {
+            '@media(max-width: 1050px)': {
                 letterSpacing: "0",
                 fontSize: "14pt"
             }
@@ -16,13 +16,13 @@ const useStyles = makeStyles((theme) => ({
         "& p": {
             fontSize: "1.2rem",
             paddingTop: "15px",
-            ['@media(max-width: 600px)']: {
+            '@media(max-width: 1050px)': {
                 letterSpacing: "0",
                 fontSize: "0.8rem"
             }
         },
         textAlign: "left",
-        ['@media(max-width: 600px)']: {
+        '@media(max-width: 1050px)': {
             marginTop: "0",
             textAlign: "center",
             padding: "5px"

@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
         },
         textAlign: "left",
         marginTop: "150px",
-        ['@media(max-width: 600px)']: {
+        '@media(max-width: 1050px)': {
+            marginTop: "150px",
             textAlign: "center",
             margin: "0",
             padding: "0",
@@ -25,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
             paddingTop: "40px",
             paddingBottom: "40px",
             fontSize: "1.3em",
-            ['@media(max-width: 600px)']: {
+            '@media(max-width: 1050px)': {
                 paddingTop: "0",
                 fontSize: "1rem",
                 textAlign: "center"
@@ -60,7 +61,7 @@ export default function ListOfProjects() {
     return (
         <div className={classes.root}>
             <Grid container spacing={1} >
-                <Grid item xs={12} xl={3}>
+                <Grid item xs={12} xl={3} lg={3} md={12} sm={12}>
                     <div className={classes.projectInfo}>
                         <h1>PROJECTS</h1>
                         <ul className={classes.projectList}>
@@ -68,7 +69,7 @@ export default function ListOfProjects() {
                         </ul>
                     </div>
                 </Grid>
-                <Grid item xs={12} xl={9}>
+                <Grid item xs={12} xl={9} lg={9} md={12} sm={12}>
                     <div className={classes.projectCard}>
                         <Projects projects={ProjectInfo[count]} />
                     </div>

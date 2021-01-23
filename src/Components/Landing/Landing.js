@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
         margin: "0 auto",
         padding: "150px",
         overflowX: "hidden",
-        ['@media(max-width: 600px)'] : {
+        '@media(max-width: 1050px)' : {
             padding: 0
         }
     },
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: "20px",
         margin: "0 auto",
         color: "Black",
-        ['@media(max-width: 600px)']: {
+        '@media(max-width: 1050px)': {
             "& h1": {
                 fontSize: "1.5rem"
             },
@@ -53,15 +53,16 @@ const useStyles = makeStyles((theme) => ({
         marginTop: "10vh",
         height: "100vh",
         margin: 0,
-        ['@media(max-width: 600px)']: {
+        '@media(max-width: 1050px)': {
             marginTop: "5vh",
+            height: "110vh"
         },
     },
     right: {
         marginTop: "10vh",
         height: "100vh",
         margin: 0,
-        ['@media(max-width: 600px)']: {
+        '@media(max-width: 1050px)': {
             marginTop: "5vh",
         },
     },
@@ -69,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: "10vh",
         height: "50vh",
         margin: 0,
-        ['@media(max-width: 600px)']: {
+        '@media(max-width: 1050px)': {
             marginTop: "10vh",
         },
     }

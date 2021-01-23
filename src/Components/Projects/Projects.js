@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
@@ -13,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#FFF",
         color: 'black',
         paddingTop: "20vh",
-        ['@media(max-width: 600px)']: {
+        '@media(max-width: 1050px)': {
+            marginTop: "150px",
             padding: "0",
             margin: "0"
         }
@@ -22,12 +22,12 @@ const useStyles = makeStyles((theme) => ({
         height: "450px",
         backgroundRepeat: "no-repeat",
         backgroundSize: "contain",
-        ['@media(max-width: 600px)']: {
+        '@media(max-width: 1050px)': {
             height: "300px"
         }
     },
     info: {
-        ['@media(min-width: 350px)']: {
+        '@media(min-width: 350px)': {
 
         }
     }
