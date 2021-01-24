@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
         },
         '@media(max-width: 1050px)': {
             textAlign: "center",
-            marginTop: "150px"
+            marginTop: "50px"
         }
     }, 
     icons: {

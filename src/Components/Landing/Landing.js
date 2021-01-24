@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
         margin: 0,
         '@media(max-width: 1050px)': {
             marginTop: "5vh",
-            height: "110vh"
+            height: "130vh"
         },
     },
     right: {

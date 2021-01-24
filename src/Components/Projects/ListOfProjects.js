@@ -6,7 +6,9 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-
+        '@media(max-width: 1050px)': {
+            height: "150vh"
+        }
     },
     projectInfo: {
         "& h1": {
@@ -61,7 +63,7 @@ export default function ListOfProjects() {
     return (
         <div className={classes.root}>
             <Grid container spacing={1} >
-                <Grid item xs={12} xl={3} lg={3} md={12} sm={12}>
+                <Grid item xs={12} xl={4} lg={4} md={12} sm={12}>
                     <div className={classes.projectInfo}>
                         <h1>PROJECTS</h1>
                         <ul className={classes.projectList}>
@@ -69,7 +71,7 @@ export default function ListOfProjects() {
                         </ul>
                     </div>
                 </Grid>
-                <Grid item xs={12} xl={9} lg={9} md={12} sm={12}>
+                <Grid item xs={12} xl={8} lg={8} md={12} sm={12}>
                     <div className={classes.projectCard}>
                         <Projects projects={ProjectInfo[count]} />
                     </div>

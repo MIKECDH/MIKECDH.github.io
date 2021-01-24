@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         color: 'black',
         paddingTop: "20vh",
         '@media(max-width: 1050px)': {
-            marginTop: "150px",
+            marginTop: "50px",
             padding: "0",
             margin: "0"
         }
