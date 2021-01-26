@@ -11,14 +11,14 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        height: 'auto',
+        height: "auto",
         textAlign: "center",
         backgroundColor: "white",
         color: '#000',
         fontFamily: "Roboto",
         margin: "0 auto",
         padding: "150px",
-        overflowX: "hidden",
+        overflow: "hidden",
         '@media(max-width: 1050px)' : {
             padding: 0
         }
@@ -60,13 +60,32 @@ const useStyles = makeStyles((theme) => ({
         '@media(min-width: 1050px) and (max-width: 1275px)': {
             height: "180vh",
         },
+        '@media(min-width: 280px) and (max-width: 374px)': {
+            height: "180vh"
+        },
+        '@media(min-width: 375px) and (max-width: 413px)': {
+            height: "170vh"
+        },
+        '@media(min-width: 414px) and (max-width: 540px)': {
+            height: "150vh"
+        },
     },
     right: {
         marginTop: "10vh",
-        height: "100vh",
+        height: "130vh",
         margin: 0,
         '@media(max-width: 1050px)': {
             marginTop: "5vh",
+            height: "130vh"
+        },
+        '@media(min-width: 280px) and (max-width: 374px)': {
+            height: "190vh"
+        },
+        '@media(min-width: 375px) and (max-width: 413px)': {
+            height: "170vh"
+        },
+        '@media(min-width: 414px) and (max-width: 540px)': {
+            height: "150vh"
         },
     },
     middle: {
