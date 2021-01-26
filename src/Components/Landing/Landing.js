@@ -87,6 +87,9 @@ const useStyles = makeStyles((theme) => ({
         '@media(min-width: 414px) and (max-width: 540px)': {
             height: "150vh"
         },
+        '@media(min-width: 1300px) and (max-width: 1920px)': {
+            height: "auto"
+        },
     },
     middle: {
         marginTop: "10vh",
