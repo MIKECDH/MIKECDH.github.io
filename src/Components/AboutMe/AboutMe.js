@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
             paddingTop: "15px",
             '@media(max-width: 1050px)': {
                 letterSpacing: "0",
-                fontSize: "0.8rem"
+                fontSize: "0.8rem",
+                padding: "15px"
             }
         },
         textAlign: "left",

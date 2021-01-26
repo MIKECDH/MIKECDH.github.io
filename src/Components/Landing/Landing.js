@@ -57,6 +57,9 @@ const useStyles = makeStyles((theme) => ({
             marginTop: "5vh",
             height: "130vh"
         },
+        '@media(min-width: 1050px) and (max-width: 1275px)': {
+            height: "180vh",
+        },
     },
     right: {
         marginTop: "10vh",
@@ -81,7 +84,7 @@ export default function Landing() {
 
     useEffect(() => {
         Aos.init({
-            duration: 1500,
+            duration: 1300,
             easing: 'ease-in',
             once: "true"
         });
